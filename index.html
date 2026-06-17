@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Super Metroid (Nintendo, SNES 1994 — &quot;Metroid 3&quot;) as a UD0 game-world: the single-game deep-dive that the franchise page METROID (MET) points into. Ceres, the descent through Zebes, the four pirate lords, the baby's sacrifice. Source-themed with an animated canvas 3D title and full ACI badges.">
+<meta name="description" content="Super Metroid (Nintendo, SNES 1994 — &quot;Metroid 3&quot;) as a UD0 game-world: the single-game deep-dive that the franchise page METROID (MET) points into. Ceres, the descent through Zebes, the four pirate lords, the baby's sacrifice. Source-themed with an original cover-style title plate (a fan-art key-art poster, not Nintendo's box art) and full ACI badges.">
 <title>SUPER METROID · SMT · UD0</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -67,61 +67,58 @@ footer a{color:var(--varia);text-decoration:none}
   <div class="marquee"><a href="https://davidwise01.github.io/ud0/">◄ UD0 · UNIVERSE DAVID 0</a> &nbsp;·&nbsp; <a href="https://davidwise01.github.io/metroid/">MET · THE FRANCHISE ▸</a> &nbsp;·&nbsp; A GAME-WORLD &nbsp;·&nbsp; SNES 1994</div>
 
   <header>
-    <div class="titleart"><canvas id="sm" width="700" height="380" style="width:100%;height:auto;display:block;background:#05070c"></canvas>
-<script>
-(function(){
-var cv=document.getElementById('sm');if(!cv)return;var g=cv.getContext('2d'),W=700,H=380,CX=350,CY=204,F=560,CAM=6,TX=-0.30;
-var stars=[];for(var i=0;i<80;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.3+.4,a:Math.random()});
-var BOXES=[
- [0,0,0, 3.4,0.46,2.0,'#3a4a5a'],
- [0,0.30,0, 2.6,0.30,1.5,'#e8743a'],
- [0,0.60,0, 0.95,0.55,0.95,'#9fd6e6'],
- [-1.72,0.05,0, 0.72,0.26,1.15,'#2a3a48'],
- [1.72,0.05,0, 0.72,0.26,1.15,'#2a3a48'],
- [0,0.02,-1.08, 1.25,0.34,0.42,'#d83a3a'],
- [-0.82,-0.42,0.40, 0.22,0.52,0.22,'#1b2630'],
- [0.82,-0.42,0.40, 0.22,0.52,0.22,'#1b2630']
-];
-function mkBox(b){var cx=b[0],cy=b[1],cz=b[2],w=b[3]/2,h=b[4]/2,d=b[5]/2;
- var v=[[-w,-h,-d],[w,-h,-d],[w,h,-d],[-w,h,-d],[-w,-h,d],[w,-h,d],[w,h,d],[-w,h,d]].map(function(p){return [p[0]+cx,p[1]+cy,p[2]+cz];});
- return {v:v,f:[[0,1,2,3],[5,4,7,6],[4,0,3,7],[1,5,6,2],[3,2,6,7],[4,5,1,0]],col:b[6]};}
-var MODEL=BOXES.map(mkBox);
-function rotY(p,a){var c=Math.cos(a),s=Math.sin(a);return [p[0]*c+p[2]*s,p[1],-p[0]*s+p[2]*c];}
-function rotX(p,a){var c=Math.cos(a),s=Math.sin(a);return [p[0],p[1]*c-p[2]*s,p[1]*s+p[2]*c];}
-function proj(p){var z=p[2]+CAM;if(z<0.1)z=0.1;return [CX+p[0]*F/z,CY-p[1]*F/z];}
-var L=[0.42,0.72,-0.55],ll=Math.hypot(L[0],L[1],L[2]);L=[L[0]/ll,L[1]/ll,L[2]/ll];
-function shade(col,br){var n=parseInt(col.slice(1),16),r=(n>>16)&255,gg=(n>>8)&255,bb=n&255;br=Math.max(.34,Math.min(1.15,br));
- return 'rgb('+Math.min(255,r*br|0)+','+Math.min(255,gg*br|0)+','+Math.min(255,bb*br|0)+')';}
-function grid(){g.strokeStyle='rgba(95,174,122,.20)';g.lineWidth=1;var gz;
- for(var gx=-7;gx<=7;gx++){var a=rotX([gx,-0.95,-3],TX),b=rotX([gx,-0.95,12],TX),pa=proj(a),pb=proj(b);g.beginPath();g.moveTo(pa[0],pa[1]);g.lineTo(pb[0],pb[1]);g.stroke();}
- for(gz=-3;gz<=12;gz++){var a=rotX([-7,-0.95,gz],TX),b=rotX([7,-0.95,gz],TX),pa=proj(a),pb=proj(b);g.beginPath();g.moveTo(pa[0],pa[1]);g.lineTo(pb[0],pb[1]);g.stroke();}}
-function frame(t){
- g.fillStyle='#05070c';g.fillRect(0,0,W,H);
- stars.forEach(function(s){g.globalAlpha=.3+.6*Math.abs(Math.sin(t/900+s.a*6));g.fillStyle='#cfe0d6';g.fillRect(s.x,s.y,s.r,s.r);});g.globalAlpha=1;
- grid();
- var ang=t/1900,polys=[];
- MODEL.forEach(function(m){var rv=m.v.map(function(p){return rotX(rotY(p,ang),TX);});
-  m.f.forEach(function(f){var p0=rv[f[0]],p1=rv[f[1]],p2=rv[f[2]];
-   var ux=p1[0]-p0[0],uy=p1[1]-p0[1],uz=p1[2]-p0[2],wx=p2[0]-p0[0],wy=p2[1]-p0[1],wz=p2[2]-p0[2];
-   var nx=uy*wz-uz*wy,ny=uz*wx-ux*wz,nz=ux*wy-uy*wx,nl=Math.hypot(nx,ny,nz)||1;nx/=nl;ny/=nl;nz/=nl;
-   var br=0.5+0.7*Math.max(0,nx*L[0]+ny*L[1]+nz*L[2]);
-   var avz=(rv[f[0]][2]+rv[f[1]][2]+rv[f[2]][2]+rv[f[3]][2])/4;
-   polys.push({pts:f.map(function(i){return proj(rv[i]);}),z:avz,col:shade(m.col,br)});});});
- polys.sort(function(a,b){return b.z-a.z;});
- polys.forEach(function(P){g.beginPath();g.moveTo(P.pts[0][0],P.pts[0][1]);for(var i=1;i<4;i++)g.lineTo(P.pts[i][0],P.pts[i][1]);g.closePath();
-  g.fillStyle=P.col;g.fill();g.strokeStyle='rgba(0,0,0,.3)';g.lineWidth=1;g.stroke();});
- g.textAlign='center';
- g.fillStyle='#0a0e14';g.font='900 32px "Arial Black",Impact,sans-serif';g.fillText('SUPER METROID',352,52);
- g.fillStyle='#e8743a';g.fillText('SUPER METROID',350,50);
- g.fillStyle='#6fb0c8';g.font='10px monospace';g.fillText('NINTENDO · SNES · 1994 · METROID 3 · RETURN TO ZEBES',350,72);
- requestAnimationFrame(frame);
-}
-frame(0);
-})();
-</script></div>
+    <div class="titleart"><svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Super Metroid — an original cover-style title plate (fan tribute, not Nintendo's box art)" style="width:100%;height:auto;display:block;background:#05070c">
+<defs>
+ <radialGradient id="sm_space" cx="36%" cy="28%" r="95%"><stop offset="0%" stop-color="#14223e"/><stop offset="55%" stop-color="#08111e"/><stop offset="100%" stop-color="#03060d"/></radialGradient>
+ <radialGradient id="sm_planet" cx="34%" cy="30%" r="78%"><stop offset="0%" stop-color="#3f815f"/><stop offset="52%" stop-color="#1d4536"/><stop offset="100%" stop-color="#091814"/></radialGradient>
+ <radialGradient id="sm_atmo" cx="50%" cy="50%" r="50%"><stop offset="80%" stop-color="rgba(232,116,58,0)"/><stop offset="93%" stop-color="rgba(232,116,58,.5)"/><stop offset="100%" stop-color="rgba(232,116,58,0)"/></radialGradient>
+ <linearGradient id="sm_vig" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(0,0,0,0)"/><stop offset="100%" stop-color="rgba(0,0,0,.5)"/></linearGradient>
+</defs>
+<rect width="700" height="380" fill="url(#sm_space)"/>
+<g fill="#cfe0d6">
+ <circle cx="48" cy="44" r="1.4" opacity=".8"/><circle cx="118" cy="92" r="1" opacity=".6"/><circle cx="206" cy="40" r="1.2" opacity=".7"/><circle cx="300" cy="118" r="1" opacity=".5"/>
+ <circle cx="392" cy="58" r="1.5" opacity=".85"/><circle cx="470" cy="120" r="1" opacity=".55"/><circle cx="556" cy="56" r="1.3" opacity=".75"/><circle cx="640" cy="104" r="1.1" opacity=".6"/>
+ <circle cx="78" cy="168" r="1" opacity=".5"/><circle cx="166" cy="232" r="1.2" opacity=".65"/><circle cx="40" cy="286" r="1.3" opacity=".7"/><circle cx="262" cy="300" r="1" opacity=".5"/>
+ <circle cx="350" cy="210" r="1" opacity=".45"/><circle cx="612" cy="176" r="1.2" opacity=".6"/><circle cx="676" cy="248" r="1" opacity=".5"/><circle cx="138" cy="334" r="1.1" opacity=".55"/>
+ <circle cx="430" cy="300" r="1" opacity=".5"/><circle cx="520" cy="250" r="1.2" opacity=".6"/><circle cx="24" cy="120" r="1" opacity=".5"/><circle cx="690" cy="60" r="1.2" opacity=".6"/>
+</g>
+<!-- planet Zebes (original) rising in the lower-right -->
+<circle cx="612" cy="356" r="196" fill="url(#sm_atmo)"/>
+<circle cx="612" cy="356" r="172" fill="url(#sm_planet)"/>
+<g fill="#0b201a" opacity=".5"><ellipse cx="556" cy="300" rx="22" ry="14"/><ellipse cx="650" cy="268" rx="13" ry="9"/><ellipse cx="700" cy="346" rx="18" ry="12"/><ellipse cx="600" cy="372" rx="15" ry="10"/></g>
+<path d="M612 184 A172 172 0 0 1 612 528 Z" fill="rgba(0,0,0,.38)"/>
+<!-- the gunship, descending toward the world (original angular form) -->
+<g transform="translate(486,150) rotate(20)">
+ <polygon points="-34,2 34,2 20,15 -20,15" fill="#33424f"/>
+ <polygon points="-24,-8 24,-8 34,2 -34,2" fill="#e8743a"/>
+ <rect x="-8" y="-15" width="16" height="9" rx="2" fill="#9fd6e6"/>
+ <polygon points="-34,2 -44,6 -24,-8" fill="#2a3a48"/><polygon points="34,2 44,6 24,-8" fill="#2a3a48"/>
+ <rect x="-6" y="15" width="12" height="6" fill="#d83a3a"/>
+ <line x1="0" y1="21" x2="0" y2="46" stroke="#ff7a4d" stroke-width="2.5" opacity=".65"/>
+</g>
+<!-- the hunter's-helmet emblem (original, stylized — a fan-tribute sigil, not traced art) -->
+<g transform="translate(74,150)">
+ <rect x="6" y="14" width="118" height="128" rx="20" fill="#0c1119"/>
+ <rect x="14" y="20" width="102" height="116" rx="16" fill="#b1502b"/>
+ <rect x="26" y="26" width="78" height="30" rx="13" fill="#e8743a"/>
+ <rect x="55" y="-10" width="20" height="40" rx="6" fill="#e8743a"/>
+ <rect x="22" y="62" width="86" height="34" rx="8" fill="#243140"/>
+ <rect x="30" y="68" width="70" height="22" rx="6" fill="#5fae7a"/>
+ <rect x="34" y="71" width="26" height="9" rx="3" fill="#bfeccd" opacity=".8"/>
+ <rect x="24" y="104" width="34" height="32" rx="7" fill="#8f3f22"/><rect x="72" y="104" width="34" height="32" rx="7" fill="#8f3f22"/>
+ <rect x="58" y="104" width="14" height="34" fill="#243140"/>
+</g>
+<!-- wordmark -->
+<text x="372" y="92" text-anchor="middle" font-family="'Arial Black',Impact,sans-serif" font-size="50" font-weight="900" fill="#0a0e14">SUPER METROID</text>
+<text x="370" y="90" text-anchor="middle" font-family="'Arial Black',Impact,sans-serif" font-size="50" font-weight="900" fill="#e8743a">SUPER METROID</text>
+<text x="370" y="118" text-anchor="middle" font-family="'Space Mono',monospace" font-size="13" letter-spacing="5" fill="#6fb0c8">METROID 3 · RETURN TO ZEBES</text>
+<text x="370" y="360" text-anchor="middle" font-family="'Space Mono',monospace" font-size="10" letter-spacing="3" fill="#56627a">NINTENDO · SNES · 1994 · an original cover-style fan tribute</text>
+<rect x="6" y="6" width="688" height="368" fill="none" stroke="#26344f" stroke-width="2"/>
+<rect width="700" height="380" fill="url(#sm_vig)"/>
+</svg></div>
     <div class="h-sub">a hunter · a stolen hatchling · a fortress-world named <b>ZEBES</b> · a sacrifice · SMT</div>
     <div class="flag">★ Nintendo · SNES 1994 · “METROID 3” · the single-game deep-dive of MET ★</div>
-    <p class="lede">Nintendo's SNES masterpiece — routinely named among the greatest games ever made. It opens cold on Ceres as Ridley steals the last Metroid; Samus pursues alone into a rebuilt Zebes and maps it room by silent room, ability-gated door by door, down past Kraid, Phantoon, Draygon and Ridley to Mother Brain — where the baby she was sent to destroy gives its life to save her. Catalogued into UD0 as the single-game deep-dive of the Metroid franchise page (MET), with the genesis, the descent, the full .dlw birth, and an animated canvas 3D title rendering Samus's gunship in rotating low-poly over Zebes.</p>
+    <p class="lede">Nintendo's SNES masterpiece — routinely named among the greatest games ever made. It opens cold on Ceres as Ridley steals the last Metroid; Samus pursues alone into a rebuilt Zebes and maps it room by silent room, ability-gated door by door, down past Kraid, Phantoon, Draygon and Ridley to Mother Brain — where the baby she was sent to destroy gives its life to save her. Catalogued into UD0 as the single-game deep-dive of the Metroid franchise page (MET), with the genesis, the descent, the full .dlw birth, and an original cover-style title plate — a fan-art key-art poster (the planet Zebes, a stylized hunter's-helmet emblem, the descending gunship), not Nintendo's box art.</p>
     <div class="badge">
       <img src="data:image/png;base64,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" alt="DLW carbon badge of SUPER METROID" title="carbon badge (archival)">
       <img src="data:image/png;base64,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" alt="DLW silicon badge" title="silicon badge">
