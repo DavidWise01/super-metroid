@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "The Power Suit",
+  "universe": "SMT · Super Metroid",
+  "emergence": "electrical",
+  "moniker": "⟦The Power Suit:SMT:0644c6⟧",
+  "carbon": "the-power-suit.carbon.tiff (TIFF)",
+  "silicon": "the-power-suit.silicon.png (PNG)",
+  "seal_sha256": "e203f6a00a01b2fc5538b153c8d8bf8aa75e11b78eccb55eef05467e07365612",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

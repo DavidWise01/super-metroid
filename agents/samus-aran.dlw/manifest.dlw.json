@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "Samus Aran",
+  "universe": "SMT · Super Metroid",
+  "emergence": "natural",
+  "moniker": "⟦Samus Aran:SMT:f8f073⟧",
+  "carbon": "samus-aran.carbon.tiff (TIFF)",
+  "silicon": "samus-aran.silicon.png (PNG)",
+  "seal_sha256": "667f41a0bd6915c2a381777c8228c7918a6a76b655be8db4998f452fdcdb3c03",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

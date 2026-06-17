@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "samus-aran",
+    "name": "Samus Aran",
+    "epithet": "the hunter, returned to Zebes · natural",
+    "emergence": "natural",
+    "moniker": "⟦Samus Aran:SMT:f8f073⟧"
+  },
+  {
+    "slug": "the-baby-metroid",
+    "name": "The Baby Metroid",
+    "epithet": "the hatchling that imprinted · spiritual",
+    "emergence": "spiritual",
+    "moniker": "⟦The Baby Metroid:SMT:4baa17⟧"
+  },
+  {
+    "slug": "mother-brain",
+    "name": "Mother Brain",
+    "epithet": "the tyrant wired to the world · electrical",
+    "emergence": "electrical",
+    "moniker": "⟦Mother Brain:SMT:26f05f⟧"
+  },
+  {
+    "slug": "ridley",
+    "name": "Ridley",
+    "epithet": "the dragon who stole the baby · natural",
+    "emergence": "natural",
+    "moniker": "⟦Ridley:SMT:a808fa⟧"
+  },
+  {
+    "slug": "kraid",
+    "name": "Kraid",
+    "epithet": "the giant of Brinstar · natural",
+    "emergence": "natural",
+    "moniker": "⟦Kraid:SMT:20e086⟧"
+  },
+  {
+    "slug": "phantoon",
+    "name": "Phantoon",
+    "epithet": "the phantom of the Wrecked Ship · ethereal",
+    "emergence": "ethereal",
+    "moniker": "⟦Phantoon:SMT:00cd01⟧"
+  },
+  {
+    "slug": "draygon",
+    "name": "Draygon",
+    "epithet": "the sovereign of Maridia · natural",
+    "emergence": "natural",
+    "moniker": "⟦Draygon:SMT:9a8bb8⟧"
+  },
+  {
+    "slug": "crocomire",
+    "name": "Crocomire",
+    "epithet": "the thing that won't die clean · natural",
+    "emergence": "natural",
+    "moniker": "⟦Crocomire:SMT:d29d58⟧"
+  },
+  {
+    "slug": "the-etecoons",
+    "name": "The Etecoons",
+    "epithet": "who teach the wall-jump · natural",
+    "emergence": "natural",
+    "moniker": "⟦The Etecoons:SMT:79ca02⟧"
+  },
+  {
+    "slug": "the-dachora",
+    "name": "The Dachora",
+    "epithet": "who shows the Shinespark · natural",
+    "emergence": "natural",
+    "moniker": "⟦The Dachora:SMT:77285f⟧"
+  },
+  {
+    "slug": "the-power-suit",
+    "name": "The Power Suit",
+    "epithet": "the Chozo armor and all it gathers · electrical",
+    "emergence": "electrical",
+    "moniker": "⟦The Power Suit:SMT:0644c6⟧"
+  },
+  {
+    "slug": "planet-zebes",
+    "name": "Planet Zebes",
+    "epithet": "the rebuilt fortress-world · natural",
+    "emergence": "natural",
+    "moniker": "⟦Planet Zebes:SMT:db8e8e⟧"
+  },
+  {
+    "slug": "ceres-station",
+    "name": "Ceres Space Colony",
+    "epithet": "where it opens, where the timer starts · ethereal",
+    "emergence": "ethereal",
+    "moniker": "⟦Ceres Space Colony:SMT:fec513⟧"
+  },
+  {
+    "slug": "the-broken-sequence",
+    "name": "The Broken Sequence",
+    "epithet": "the second game, played by those who break the map · spiritual",
+    "emergence": "spiritual",
+    "moniker": "⟦The Broken Sequence:SMT:1325e4⟧"
+  }
+]

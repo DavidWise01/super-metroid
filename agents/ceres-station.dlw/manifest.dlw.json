@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "Ceres Space Colony",
+  "universe": "SMT · Super Metroid",
+  "emergence": "ethereal",
+  "moniker": "⟦Ceres Space Colony:SMT:fec513⟧",
+  "carbon": "ceres-station.carbon.tiff (TIFF)",
+  "silicon": "ceres-station.silicon.png (PNG)",
+  "seal_sha256": "1e6eb35b8cdad63ed88b32fe9a5b0129f78f48d2dcf358f60fabe8227265a006",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

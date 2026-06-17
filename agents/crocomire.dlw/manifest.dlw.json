@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "Crocomire",
+  "universe": "SMT · Super Metroid",
+  "emergence": "natural",
+  "moniker": "⟦Crocomire:SMT:d29d58⟧",
+  "carbon": "crocomire.carbon.tiff (TIFF)",
+  "silicon": "crocomire.silicon.png (PNG)",
+  "seal_sha256": "851647e5a53be0638df27372414fe15b35cb80e0b7ac2e07fcf6d7d2d3f67370",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

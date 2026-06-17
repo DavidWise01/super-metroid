@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "The Etecoons",
+  "universe": "SMT · Super Metroid",
+  "emergence": "natural",
+  "moniker": "⟦The Etecoons:SMT:79ca02⟧",
+  "carbon": "the-etecoons.carbon.tiff (TIFF)",
+  "silicon": "the-etecoons.silicon.png (PNG)",
+  "seal_sha256": "20de6688b14f195d7f536c16abba5ae00e8c29d8284f56763cafe361d8105d00",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

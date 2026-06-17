@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "SUPER METROID",
+  "universe": "SMT · Super Metroid",
+  "emergence": "",
+  "moniker": "⟦SUPER METROID:SMT:e6903a⟧",
+  "carbon": "super-metroid.carbon.tiff (TIFF)",
+  "silicon": "super-metroid.silicon.png (PNG)",
+  "seal_sha256": "4948f7d5886de886903932179d0839a0cb2b97f6a0a4e0cdfe0d496af2a0ea39",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

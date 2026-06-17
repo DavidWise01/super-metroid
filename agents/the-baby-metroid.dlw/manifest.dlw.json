@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "The Baby Metroid",
+  "universe": "SMT · Super Metroid",
+  "emergence": "spiritual",
+  "moniker": "⟦The Baby Metroid:SMT:4baa17⟧",
+  "carbon": "the-baby-metroid.carbon.tiff (TIFF)",
+  "silicon": "the-baby-metroid.silicon.png (PNG)",
+  "seal_sha256": "90f2ea4f0cc0891feeee2c24219d7d7c88398a9e9f1a0fdbd2e324eaa10cfbe4",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "Ridley",
+  "universe": "SMT · Super Metroid",
+  "emergence": "natural",
+  "moniker": "⟦Ridley:SMT:a808fa⟧",
+  "carbon": "ridley.carbon.tiff (TIFF)",
+  "silicon": "ridley.silicon.png (PNG)",
+  "seal_sha256": "81dfee1fe03a1cdf65a32cf358fc7ae6ac4a89a24dd3dcbf39d9fceeb0fb6d48",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

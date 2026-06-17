@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "The Broken Sequence",
+  "universe": "SMT · Super Metroid",
+  "emergence": "spiritual",
+  "moniker": "⟦The Broken Sequence:SMT:1325e4⟧",
+  "carbon": "the-broken-sequence.carbon.tiff (TIFF)",
+  "silicon": "the-broken-sequence.silicon.png (PNG)",
+  "seal_sha256": "025aa4fd4c781c13bab69ccdfcabed0d77e48ab61a73f788422c03c3f6a60ac2",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

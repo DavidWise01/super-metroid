@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "Draygon",
+  "universe": "SMT · Super Metroid",
+  "emergence": "natural",
+  "moniker": "⟦Draygon:SMT:9a8bb8⟧",
+  "carbon": "draygon.carbon.tiff (TIFF)",
+  "silicon": "draygon.silicon.png (PNG)",
+  "seal_sha256": "6ba7968cdb53a37480b17bfd8e8d54471eb4bd059ffd0e588777b2e55db405ef",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "Mother Brain",
+  "universe": "SMT · Super Metroid",
+  "emergence": "electrical",
+  "moniker": "⟦Mother Brain:SMT:26f05f⟧",
+  "carbon": "mother-brain.carbon.tiff (TIFF)",
+  "silicon": "mother-brain.silicon.png (PNG)",
+  "seal_sha256": "fca513d0a18e0fccf83326994890b25abaf8242acabbbf3323ceb5f3e5003a49",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}
