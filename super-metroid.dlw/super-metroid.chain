@@ -1,0 +1,9 @@
+ROOT0-DLW-CHAIN-v1
+index : 615
+slug  : super-metroid
+seal  : 4948f7d5886de886903932179d0839a0cb2b97f6a0a4e0cdfe0d496af2a0ea39
+prev  : 53a81504407422d57e9fb0eb3ae7a0f202f36c9a3cafab8fa2b236586095dc1b
+link  : 9293bc7cccb4a44681d62f0d51c007d9c5e972fba5ae903358502cb04e70e973
+head  : 3447d3a0533aaf1e29a8bdc67a9774884fb3ae9dbc8a17064b7a008ca3c4ec90
+
+— the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.
